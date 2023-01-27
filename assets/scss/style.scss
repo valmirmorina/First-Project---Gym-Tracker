@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fira+Sans+Extra+Condensed&display=swap');
+@import 'variables';
+@import 'base';
+@import 'mixins';
+@import 'buttonhover';
+
+//Header
+header { 
+    height: 60px;
+    background-color: $grey;
+    
+    .container{
+        height: 60px;
+        @include flexSbAc}
+    img{padding-top: 10px;}
+    nav{ width: 50%;
+        display: block;
+        ul{
+            list-style-type: none;
+            a:link {
+                text-decoration: none;
+              }
+              
+              a:visited {
+                text-decoration: none;
+              }
+              
+              a:hover {
+                text-decoration: underline;
+              }
+              
+              a:active {
+                text-decoration: underline;
+              }
+           @include flexSbAc;}
+
+    }
+    .menu-icon{
+        display: none;
+    }
+}
+
+//Main
+main {
+    background-color: $grey;
+    width: 100%;
+    height: 80vh;
+    .container{
+        height: 80vh;
+        align-items: center;
+    }
+    .intro{
+        padding: 130px 0px;
+        background-image: url('../images/680-min.jpg');
+        background-repeat: no-repeat;
+        background-position:bottom right;
+        display: flex;
+        justify-content: baseline;
+        background-size: 650px;
+        background-color: $grey;
+        
+    }
+    .points{
+        h2{
+            padding: 10px 0px;
+        }
+    }
+    .maintext{
+        width: 100%;
+        float: left;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 0.3fr;
+        gap:20px;
+
+        }
+    }
+
+//Rating 
+.rating{
+    .container{
+        padding: 10px 0 20px 0;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;}
+
+    .rating-grid{
+        display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 40px;
+    text-align: center;
+    align-items:center;
+    }
+    }
+   
+//Info 
+.info{background-color: $grey;
+    .container{
+        padding: 10px;
+        align-items: center;
+       }
+       h1{text-align: center;}
+    .texto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    }
+
+//Table 
+.table{
+    padding-top: 40px;
+    font-size: 18px;
+    border: 2px;
+    border-collapse: collapse;
+    background-color: $white;
+    .container{
+        width: 1000px;
+    }
+    td,th{
+        border: 2x $black;
+        padding: 10px 10px;}
+    thead{
+        background-color:grey;
+    }
+    
+}
+
+
+//Accountable 
+.accountable{
+    .accountable-grid{
+        padding: 40px 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        }
+        img{width:600px}
+        .h1{width: 600px;}
+        .p{width: 500px;
+        padding-top: 20px;}
+    }
+
+//Flexible 
+.flexible-grid{
+        padding: 40px 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        img{width:500px}
+        .h1{width: 600px;}
+        .p{width: 500px;
+        padding-top: 20px;}
+    }
+
+//Programs and cards
+.programs{ padding-top: 40px;
+        text-align: center;
+        h1{padding: 40px;}
+        .cards-grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            align-items: center;
+            gap: 10px;
+    
+
+        }
+    }
+
+//Goals 
+.goals{
+    .container{
+        padding: 100px;
+        background-color: $grey;
+        text-align: center;
+        a{width: 250px;}
+
+        
+    }
+
+}
+
+//Trainers 
+.trainers{
+    text-align: center;
+    .container{
+        padding: 40px;
+    }
+    .trainer-title{
+        padding: 20px;
+    }
+
+    .trainer-profiles{
+        display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            align-items: center;
+            gap: 10px;
+        h2{
+            padding: 3px;
+        }
+        p{
+            padding-bottom: 10px;
+        }
+        a{
+            padding: 7px;
+        }
+    }
+    .button2{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+
+
+    }
+    
+}
+
+//Plan
+.plan{
+    .container{
+        padding: 60px;
+        background-color: white;
+        .plan-elements{
+            text-align: center;
+            .shield{
+        }
+    }
+}
+}
+
+//Plan2
+.plan2{
+    .container{
+        padding: 40px;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+
+        .plans{
+            width: 270px;
+            text-align: center;
+
+        }
+    }
+}
+
+//Form
+.book{
+    .container{
+        padding: 10px;
+        background-color: $grey;
+    width: 100%;
+    height: 80vh;
+    .container{
+        height: 80vh;
+    }
+    .forma{
+        padding: 130px 0px;
+        background-image: url('../images/book.jpg');
+        background-repeat: no-repeat;
+        display: flex;
+        width: 100%;
+        background-size: 1550px;
+        height: 1000px;
+        background-color: $grey;
+    }
+    .formulari{
+        width: 700px;
+        height: 400px;
+
+    }
+}
+}
+
+
+//MOBILE VERSION
+@media screen and (max-width:768px){
+
+    header{
+        nav{display: none;
+        }    
+        .btn{
+            display: none;
+            }
+    
+    .container{
+    .menu-icon{
+        display: flex;
+        justify-content: center;
+        width: 31px;
+        height: 31px;
+        background-image: url(../images/menu.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    }
+    
+    }
+
+    main {
+        background-color: $grey;
+        width: 100%;
+        height: auto;
+    
+        .container{
+            text-align: center;
+            padding: 0 20px;
+            height: auto;
+        }
+        .intro{
+            height: auto;
+            background-image: url('../images/680-min.jpg');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 270px;
+            background-color: $grey;
+            }
+            .maintext{
+                height: 50%;
+                margin-top: -100px;
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: 0.1fr 0.3fr 0.5fr;
+                align-items: center;
+                justify-items: center;
+                }
+                .btn{
+                    width: 150px;
+                    height: 100%;
+                }
+    }
+
+    .rating{
+        .container{
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 100%;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;}               
+         .rating-grid{
+                display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            gap: 10px;
+            text-align: center;
+            align-items:center;
+            }
+    }      
+
+    .info{background-color: $grey;
+        .container{
+            padding: 10px;
+            align-items: center;
+            .img{
+                width:100px;
+            }
+           }
+    
+           h1{text-align: center;}
+           img{width: 100%;}
+        .texto{
+            display: grid;
+            justify-content: repeat (1,1fr);
+            align-items: repeat(3, 1fr);
+            gap: 40px;
+        }
+    }        
+        
+    .table{
+    .container{
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    padding-top: 40px;
+    font-size: 18px;
+    border: 2px;
+    border-collapse: collapse;
+    background-color: $white;
+
+    td,th{
+        border: 2x $black;
+        padding: 10px 10px;}
+    thead{
+        background-color:grey;
+    }        
+    
+            
+        }        
+    }
+
+    .accountable{
+        .container{
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            justify-content:center;
+            width: 100%;
+        }
+        .accountable-grid{
+     
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        img{width:340px}
+        h1{font-size: 30px;}
+        }
+   
+        padding-top: 20px;}
+    
+    .flexible{
+        .container{
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            justify-content:center;
+            width: 100%;
+        }
+        .flexible-grid{
+     
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
+        img{width:340px}
+        h1{font-size: 30px;}
+        }
+    }
+
+    .programs{ padding-top: 40px;
+        .container{
+            width: 100%;
+        }
+        text-align: center;
+        h1{padding: 20px;}
+        .cards-grid{
+            img{width: 65%;
+            height: 65%;}
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,2fr);
+            align-items: center;
+            gap: 10px;
+            
+    }
+    }
+
+    .goals{
+        .container{     
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat (3,1fr);
+            justify-content: center;
+            background-color: $grey;
+            text-align: center;
+            a{width: 250px;}
+            span{font-size: 30px;}
+
+    }
+    
+    }
+
+    .trainers{
+        text-align: center;
+        .container{
+            width: 100%;
+        }
+        .trainer-title{
+            padding: 20px;
+        }
+    
+        .trainer-profiles{
+            img{width: 45%;
+            height: 45%;}
+            display: grid;
+            justify-content: center;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(4,2fr);
+                align-items: center;
+                gap: 10px;
+            h2{
+                padding: 3px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+            a{
+                padding: 7px;
+            }
+        }
+        .button2{
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+    
+    
+        }
+        
+    }
+
+    .plan2{
+        .container{
+            padding: 40px;
+            display:grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(4,1fr);
+            justify-items: center;
+            gap: 20px;
+    
+            .plans{
+                width: 270px;
+                text-align: center;
+    
+            }
+        }
+    }
+    
+    .book{
+        .container{
+            padding: 10px;
+            background-color: $grey;
+        width: 100%;
+        height: 80vh;
+        .container{
+            height: 80vh;
+        }
+        .forma{
+            padding: 130px 0px;
+            background-image: url('../images/book.jpg');
+            background-repeat: no-repeat;
+            display: flex;
+            width: 100%;
+            background-size: 380px;
+            height: 300px;
+            background-color: $grey;
+        }
+        .formulari{
+            width: 700px;
+            height: 400px;
+    
+        }
+    }
+    }
+
+
+}
+     
+
+
+
+
+
+              
+             
+        
+              
+        
+       
+
+
+
+    
+
+    
+  
+
+
+
+    
+
+

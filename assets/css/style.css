@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fira+Sans+Extra+Condensed&display=swap");
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+h3 {
+  font-family: "Bebas Neue", cursive;
+}
+
+.container {
+  width: 1199px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #ff6326;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  border-radius: 8px;
+}
+
+.card {
+  color: #111;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.profile {
+  color: #111;
+  background-color: #f4f6fa;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  align-items: center;
+}
+
+.plans {
+  color: #111;
+  background-color: #f4f6fa;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  align-items: center;
+}
+
+.formulari {
+  color: #111;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
+.btn {
+  background-color: #ff6326; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  border-radius: 8px;
+  position: relative;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:after {
+  content: "";
+  background: orange;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+header {
+  height: 60px;
+  background-color: #f4f6fa;
+}
+header .container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  padding-top: 10px;
+}
+header nav {
+  width: 50%;
+  display: block;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul a:link {
+  text-decoration: none;
+}
+header nav ul a:visited {
+  text-decoration: none;
+}
+header nav ul a:hover {
+  text-decoration: underline;
+}
+header nav ul a:active {
+  text-decoration: underline;
+}
+header .menu-icon {
+  display: none;
+}
+
+main {
+  background-color: #f4f6fa;
+  width: 100%;
+  height: 80vh;
+}
+main .container {
+  height: 80vh;
+  align-items: center;
+}
+main .intro {
+  padding: 130px 0px;
+  background-image: url("../images/680-min.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: flex;
+  justify-content: baseline;
+  background-size: 650px;
+  background-color: #f4f6fa;
+}
+main .points h2 {
+  padding: 10px 0px;
+}
+main .maintext {
+  width: 100%;
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 0.3fr;
+  gap: 20px;
+}
+
+.rating .container {
+  padding: 10px 0 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rating .rating-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.info {
+  background-color: #f4f6fa;
+}
+.info .container {
+  padding: 10px;
+  align-items: center;
+}
+.info h1 {
+  text-align: center;
+}
+.info .texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.table {
+  padding-top: 40px;
+  font-size: 18px;
+  border: 2px;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+.table .container {
+  width: 1000px;
+}
+.table td, .table th {
+  border: 2x #111;
+  padding: 10px 10px;
+}
+.table thead {
+  background-color: grey;
+}
+
+.accountable .accountable-grid {
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.accountable img {
+  width: 600px;
+}
+.accountable .h1 {
+  width: 600px;
+}
+.accountable .p {
+  width: 500px;
+  padding-top: 20px;
+}
+
+.flexible-grid {
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.flexible-grid img {
+  width: 500px;
+}
+.flexible-grid .h1 {
+  width: 600px;
+}
+.flexible-grid .p {
+  width: 500px;
+  padding-top: 20px;
+}
+
+.programs {
+  padding-top: 40px;
+  text-align: center;
+}
+.programs h1 {
+  padding: 40px;
+}
+.programs .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.goals .container {
+  padding: 100px;
+  background-color: #f4f6fa;
+  text-align: center;
+}
+.goals .container a {
+  width: 250px;
+}
+
+.trainers {
+  text-align: center;
+}
+.trainers .container {
+  padding: 40px;
+}
+.trainers .trainer-title {
+  padding: 20px;
+}
+.trainers .trainer-profiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+.trainers .trainer-profiles h2 {
+  padding: 3px;
+}
+.trainers .trainer-profiles p {
+  padding-bottom: 10px;
+}
+.trainers .trainer-profiles a {
+  padding: 7px;
+}
+.trainers .button2 {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.plan .container {
+  padding: 60px;
+  background-color: white;
+}
+.plan .container .plan-elements {
+  text-align: center;
+}
+.plan2 .container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+.plan2 .container .plans {
+  width: 270px;
+  text-align: center;
+}
+
+.book .container {
+  padding: 10px;
+  background-color: #f4f6fa;
+  width: 100%;
+  height: 80vh;
+}
+.book .container .container {
+  height: 80vh;
+}
+.book .container .forma {
+  padding: 130px 0px;
+  background-image: url("../images/book.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  background-size: 1550px;
+  height: 1000px;
+  background-color: #f4f6fa;
+}
+.book .container .formulari {
+  width: 700px;
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .btn {
+    display: none;
+  }
+  header .container .menu-icon {
+    display: flex;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    background-image: url(../images/menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  main {
+    background-color: #f4f6fa;
+    width: 100%;
+    height: auto;
+  }
+  main .container {
+    text-align: center;
+    padding: 0 20px;
+    height: auto;
+  }
+  main .intro {
+    height: auto;
+    background-image: url("../images/680-min.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 270px;
+    background-color: #f4f6fa;
+  }
+  main .maintext {
+    height: 50%;
+    margin-top: -100px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.1fr 0.3fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+  }
+  main .btn {
+    width: 150px;
+    height: 100%;
+  }
+  .rating .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rating .rating-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .info {
+    background-color: #f4f6fa;
+  }
+  .info .container {
+    padding: 10px;
+    align-items: center;
+  }
+  .info .container .img {
+    width: 100px;
+  }
+  .info h1 {
+    text-align: center;
+  }
+  .info img {
+    width: 100%;
+  }
+  .info .texto {
+    display: grid;
+    justify-content: repeat 1, 1fr;
+    align-items: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .table .container {
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    padding-top: 40px;
+    font-size: 18px;
+    border: 2px;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  .table .container td, .table .container th {
+    border: 2x #111;
+    padding: 10px 10px;
+  }
+  .table .container thead {
+    background-color: grey;
+  }
+  .accountable {
+    padding-top: 20px;
+  }
+  .accountable .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .accountable .accountable-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+  }
+  .accountable .accountable-grid img {
+    width: 340px;
+  }
+  .accountable .accountable-grid h1 {
+    font-size: 30px;
+  }
+  .flexible .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .flexible .flexible-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+  }
+  .flexible .flexible-grid img {
+    width: 340px;
+  }
+  .flexible .flexible-grid h1 {
+    font-size: 30px;
+  }
+  .programs {
+    padding-top: 40px;
+    text-align: center;
+  }
+  .programs .container {
+    width: 100%;
+  }
+  .programs h1 {
+    padding: 20px;
+  }
+  .programs .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    align-items: center;
+    gap: 10px;
+  }
+  .programs .cards-grid img {
+    width: 65%;
+    height: 65%;
+  }
+  .goals .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 3, 1fr;
+    justify-content: center;
+    background-color: #f4f6fa;
+    text-align: center;
+  }
+  .goals .container a {
+    width: 250px;
+  }
+  .goals .container span {
+    font-size: 30px;
+  }
+  .trainers {
+    text-align: center;
+  }
+  .trainers .container {
+    width: 100%;
+  }
+  .trainers .trainer-title {
+    padding: 20px;
+  }
+  .trainers .trainer-profiles {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    align-items: center;
+    gap: 10px;
+  }
+  .trainers .trainer-profiles img {
+    width: 45%;
+    height: 45%;
+  }
+  .trainers .trainer-profiles h2 {
+    padding: 3px;
+  }
+  .trainers .trainer-profiles p {
+    padding-bottom: 10px;
+  }
+  .trainers .trainer-profiles a {
+    padding: 7px;
+  }
+  .trainers .button2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .plan2 .container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+  .plan2 .container .plans {
+    width: 270px;
+    text-align: center;
+  }
+  .book .container {
+    padding: 10px;
+    background-color: #f4f6fa;
+    width: 100%;
+    height: 80vh;
+  }
+  .book .container .container {
+    height: 80vh;
+  }
+  .book .container .forma {
+    padding: 130px 0px;
+    background-image: url("../images/book.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    background-size: 380px;
+    height: 300px;
+    background-color: #f4f6fa;
+  }
+  .book .container .formulari {
+    width: 700px;
+    height: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
